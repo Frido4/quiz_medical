@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/drawable/btn_bg.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_anatomy.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_main.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_pharmacology.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_physiology.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_score_ana.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_score_pha.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_score_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_score_phy.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_splash.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau1.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau1_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau1_physiology.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau2.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau2_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau2_physiology.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau3.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau3_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau3_physiology.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau4.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau4_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau4_physiology.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau5.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau5_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau5_physiology.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau6.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau6_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau6_physiology.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau7.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau7_pharma.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau7_physiology.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau8.xml" value="0.15172101449275363" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau8_phamra.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/layout/activity_tv_niveau8_physiology.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/QuizMdicalMdecine2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

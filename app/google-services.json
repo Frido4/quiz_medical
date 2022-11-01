@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "336563560168",
+    "project_id": "quizmdicalmdecine",
+    "storage_bucket": "quizmdicalmdecine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336563560168:android:1182bfa06cde48f0b6b35d",
+        "android_client_info": {
+          "package_name": "fr.fredoone.quizmdical__mdecine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336563560168-g3o0t384ae714rh89lfah7gcfjia3fsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.fredoone.quizmdical__mdecine",
+            "certificate_hash": "9f3c94ff64aee5f986c7290faeb857d281516606"
+          }
+        },
+        {
+          "client_id": "336563560168-69e6vh2k7clnmadmo201vht8oh1bnblr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYHS8IcgVDdzz_5ZlBZoNXWyeNJceaJI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336563560168-69e6vh2k7clnmadmo201vht8oh1bnblr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ccc"
+    tools:context=".splashActivity">
+
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/buenard_bold"
+        android:gravity="center_vertical"
+        android:text="Méilleur Quiz Médical"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mTextView1"
+        app:layout_constraintStart_toStartOf="@+id/mTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/mTextView1" />
+
+    <TextView
+        android:id="@+id/mTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bungee_inline"
+        android:gravity="center_vertical"
+        android:text="MedicQuiz"
+        android:textColor="@color/purple_700"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="301dp"
+        android:background="@drawable/ab7"
+        app:layout_constraintBottom_toTopOf="@+id/mTextView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        android:contentDescription="TODO" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
