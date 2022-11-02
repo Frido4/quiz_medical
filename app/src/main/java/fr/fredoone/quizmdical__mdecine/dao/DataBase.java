@@ -1,9 +1,10 @@
-package fr.fredoone.quizmdical__mdecine;
+package fr.fredoone.quizmdical__mdecine.dao;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import fr.fredoone.quizmdical__mdecine.domaine.QuestionModel;
 import fr.fredoone.quizmdical__mdecine.domaine.TypeQuestion;
 
 public class DataBase {

@@ -1,4 +1,4 @@
-package fr.fredoone.quizmdical__mdecine;
+package fr.fredoone.quizmdical__mdecine.domaine;
 
 import fr.fredoone.quizmdical__mdecine.domaine.TypeQuestion;
 

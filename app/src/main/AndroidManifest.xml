@@ -22,25 +22,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ScorePhaActivity"
+            android:name=".view.ScoreActivity"
             android:exported="false" />
         <activity
-            android:name=".ScorePhyActivity"
+            android:name=".view.QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".ScoreAnaActivity"
+            android:name=".view.PharmacologyActivity"
             android:exported="false" />
         <activity
-            android:name=".TvNiveau1Activity"
+            android:name=".view.PhysiologyActivity"
             android:exported="false" />
         <activity
-            android:name=".PharmacologyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PhysiologyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AnatomyActivity"
+            android:name=".view.AnatomyActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"  android:hardwareAccelerated="true"

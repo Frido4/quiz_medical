@@ -1,4 +1,4 @@
-package fr.fredoone.quizmdical__mdecine;
+package fr.fredoone.quizmdical__mdecine.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,12 +36,16 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.fredoone.quizmdical__mdecine.domaine.QuestionModel;
+import fr.fredoone.quizmdical__mdecine.R;
+import fr.fredoone.quizmdical__mdecine.dao.DataBase;
 import fr.fredoone.quizmdical__mdecine.domaine.TypeQuestion;
 
-public class TvNiveau1Activity extends AppCompatActivity {
+public class QuizActivity extends AppCompatActivity {
     private FirebaseDatabase mDatabase;
     private DatabaseReference myRef;
     private RewardedAd mRewardedAd;
+    private String typeQuestionString;
 
     AdView mAdView;
 
@@ -66,8 +70,9 @@ public class TvNiveau1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tv_niveau1);
-        TypeQuestion typeQuestion = TypeQuestion.valueOf(getIntent().getStringExtra("TYPE_QUESTION"));
+        setContentView(R.layout.activity_quiz);
+        typeQuestionString = getIntent().getStringExtra("TYPE_QUESTION");
+        TypeQuestion typeQuestion = TypeQuestion.valueOf(typeQuestionString);
         int niveau = getIntent().getIntExtra("NIVEAU", 0);
         for(QuestionModel q: DataBase.addQuestions()){
             if (niveau == q.getNiveau() && typeQuestion == q.getTypeQuestion()){
@@ -98,7 +103,7 @@ public class TvNiveau1Activity extends AppCompatActivity {
                     @Override
                     public void onAdLoaded(@NonNull RewardedAd rewardedAd) {
                         mRewardedAd = rewardedAd;
-                        Toast.makeText(TvNiveau1Activity.this, "Ads successfully loaded", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuizActivity.this, "Ads successfully loaded", Toast.LENGTH_SHORT).show();
                         mRewardedAd.setFullScreenContentCallback(new FullScreenContentCallback() {
                             @Override
                             public void onAdClicked() {
@@ -174,7 +179,7 @@ public class TvNiveau1Activity extends AppCompatActivity {
                         checkAnswer();
                         countDownTimer.cancel();
                     }else {
-                        Toast.makeText(TvNiveau1Activity.this, "Veuillez sélectionner une réponse", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuizActivity.this, "Veuillez sélectionner une réponse", Toast.LENGTH_SHORT).show();
                     }
                 }else {
                     showNextQuestion();
@@ -247,13 +252,8 @@ public class TvNiveau1Activity extends AppCompatActivity {
             if (score >= 150) {
                 SharedPreferences preferences = getSharedPreferences("PREFS",0);
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putInt("lastScore", score);
+                editor.putInt(typeQuestionString + "lastScore1", score);
                 editor.apply();
-
-
-                editor.putInt("lastScore1", score);
-                editor.apply();
-
                 passStatus = "Bravo!! Vouz avez terminé!!"+ " Passez au Niveau supérieur";
 
 
@@ -261,10 +261,7 @@ public class TvNiveau1Activity extends AppCompatActivity {
 
                 SharedPreferences preferences = getSharedPreferences("PREFS",0);
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putInt("lastScore", score);
-                editor.apply();
-
-                editor.putInt("lastScore1", score);
+                editor.putInt(typeQuestionString + "lastScore1", score);
                 editor.apply();
                 passStatus = "Vous avez échoué, réessayez";
             }
@@ -276,12 +273,12 @@ public class TvNiveau1Activity extends AppCompatActivity {
                     .show();
 
             if (mRewardedAd != null) {
-                Activity activityContext = TvNiveau1Activity.this;
+                Activity activityContext = QuizActivity.this;
                 mRewardedAd.show(activityContext, new OnUserEarnedRewardListener() {
                     @Override
                     public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
                         // Handle the reward.
-                        Toast.makeText(TvNiveau1Activity.this, "rewards finish", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuizActivity.this, "rewards finish", Toast.LENGTH_SHORT).show();
                         int rewardAmount = rewardItem.getAmount();
                         String rewardType = rewardItem.getType();
                     }

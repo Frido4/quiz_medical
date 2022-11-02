@@ -27,8 +27,10 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.gms.ads.rewarded.RewardItem;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+
+import fr.fredoone.quizmdical__mdecine.view.AnatomyActivity;
+import fr.fredoone.quizmdical__mdecine.view.PharmacologyActivity;
+import fr.fredoone.quizmdical__mdecine.view.PhysiologyActivity;
 
 
 public class MainActivity extends AppCompatActivity {

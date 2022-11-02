@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/aae"
-    tools:context=".TvNiveau1Activity">
+    tools:context=".view.QuizActivity">
 
 
     <TextView

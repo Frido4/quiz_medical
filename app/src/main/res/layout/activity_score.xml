@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cd"
-    tools:context=".ScorePhyActivity">
+    tools:context=".view.ScoreActivity">
+
 
 
     <TextView
-        android:id="@+id/tvScoreN1Phy"
+        android:id="@+id/tvScoreN1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -24,7 +25,7 @@
         app:layout_constraintVertical_bias="0.02" />
 
     <TextView
-        android:id="@+id/tvScoreN1aPhy"
+        android:id="@+id/tvScoreN1a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -38,8 +39,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.045" />
 
+
     <TextView
-        android:id="@+id/tvScoreN2Phy"
+        android:id="@+id/tvScoreN2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -53,8 +55,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
 
+
     <TextView
-        android:id="@+id/tvScoreN2aPhy"
+        android:id="@+id/tvScoreN2a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -69,7 +72,7 @@
         app:layout_constraintVertical_bias="0.126" />
 
     <TextView
-        android:id="@+id/tvScoreN3Phy"
+        android:id="@+id/tvScoreN3"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -84,7 +87,7 @@
         app:layout_constraintVertical_bias="0.182" />
 
     <TextView
-        android:id="@+id/tvScoreN3aPhy"
+        android:id="@+id/tvScoreN3a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -99,7 +102,7 @@
         app:layout_constraintVertical_bias="0.207" />
 
     <TextView
-        android:id="@+id/tvScoreN4Phy"
+        android:id="@+id/tvScoreN4"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -111,10 +114,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.262" />
 
     <TextView
-        android:id="@+id/tvScoreN4aPhy"
+        android:id="@+id/tvScoreN4a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -129,7 +132,7 @@
         app:layout_constraintVertical_bias="0.288" />
 
     <TextView
-        android:id="@+id/tvScoreN5Phy"
+        android:id="@+id/tvScoreN5"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -144,7 +147,7 @@
         app:layout_constraintVertical_bias="0.344" />
 
     <TextView
-        android:id="@+id/tvScoreN5aPhy"
+        android:id="@+id/tvScoreN5a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -159,7 +162,7 @@
         app:layout_constraintVertical_bias="0.369" />
 
     <TextView
-        android:id="@+id/tvScoreN6Phy"
+        android:id="@+id/tvScoreN6"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -174,7 +177,7 @@
         app:layout_constraintVertical_bias="0.425" />
 
     <TextView
-        android:id="@+id/tvScoreN6aPhy"
+        android:id="@+id/tvScoreN6a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -189,7 +192,7 @@
         app:layout_constraintVertical_bias="0.450" />
 
     <TextView
-        android:id="@+id/tvScoreN7Phy"
+        android:id="@+id/tvScoreN7"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -204,7 +207,7 @@
         app:layout_constraintVertical_bias="0.506" />
 
     <TextView
-        android:id="@+id/tvScoreN7aPhy"
+        android:id="@+id/tvScoreN7a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -218,8 +221,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.531" />
 
+
     <TextView
-        android:id="@+id/tvScoreN8Phy"
+        android:id="@+id/tvScoreN8"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -234,7 +238,7 @@
         app:layout_constraintVertical_bias="0.587" />
 
     <TextView
-        android:id="@+id/tvScoreN8aPhy"
+        android:id="@+id/tvScoreN8a"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=""
@@ -247,5 +251,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.612" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

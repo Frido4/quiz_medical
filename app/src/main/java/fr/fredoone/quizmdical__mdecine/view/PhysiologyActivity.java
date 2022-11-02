@@ -1,4 +1,4 @@
-package fr.fredoone.quizmdical__mdecine;
+package fr.fredoone.quizmdical__mdecine.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
+import fr.fredoone.quizmdical__mdecine.R;
 import fr.fredoone.quizmdical__mdecine.domaine.TypeQuestion;
 
 public class PhysiologyActivity extends AppCompatActivity {
@@ -53,7 +54,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau1Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 1);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -64,7 +65,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau2Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 2);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -75,7 +76,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau3Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 3);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -85,7 +86,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau4Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 4);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -95,7 +96,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau5Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 5);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -106,7 +107,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau6Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 6);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -117,7 +118,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau7Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 7);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -128,7 +129,7 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvNiveau8Physiology.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(PhysiologyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 8);
                 tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvNiveau1ActivityIntent);
@@ -138,7 +139,8 @@ public class PhysiologyActivity extends AppCompatActivity {
         tvScorePhy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  tvScorePhyActivityIntent= new Intent(PhysiologyActivity.this, ScorePhyActivity.class);
+                Intent  tvScorePhyActivityIntent= new Intent(PhysiologyActivity.this, ScoreActivity.class);
+                tvScorePhyActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHYSIOLOGY.toString());
                 startActivity(tvScorePhyActivityIntent);
 
                 if (mInterstitialAd != null) {

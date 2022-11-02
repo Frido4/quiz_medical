@@ -1,4 +1,4 @@
-package fr.fredoone.quizmdical__mdecine;
+package fr.fredoone.quizmdical__mdecine.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,19 +17,19 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
+import fr.fredoone.quizmdical__mdecine.R;
 import fr.fredoone.quizmdical__mdecine.domaine.TypeQuestion;
 
-public class PharmacologyActivity extends AppCompatActivity {
+public class AnatomyActivity extends AppCompatActivity {
     private InterstitialAd mInterstitialAd;
     AdView mAdView;
-
-    Button tvNiveau1Pharma, tvNiveau2Pharma, tvNiveau3Pharma, tvNiveau4Pharma, tvNiveau5Pharma, tvNiveau6Pharma, tvNiveau7Pharma, tvNiveau8Pharma, tvScoreP;
-
+    int score= 0;
+    Button tvNiveau1, tvNiveau2, tvNiveau3, tvNiveau4, tvNiveau5, tvNiveau6, tvNiveau7, tvNiveau8, tvScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pharmacology);
+        setContentView(R.layout.activity_anatomy);
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -39,107 +39,109 @@ public class PharmacologyActivity extends AppCompatActivity {
         LoadBanner();
         LoadInterstitial();
 
-        tvNiveau1Pharma=findViewById(R.id.tvNiveau1);
-        tvNiveau2Pharma=findViewById(R.id.tvNiveau2);
-        tvNiveau3Pharma=findViewById(R.id.tvNiveau3);
-        tvNiveau4Pharma=findViewById(R.id.tvNiveau4);
-        tvNiveau5Pharma=findViewById(R.id.tvNiveau5);
-        tvNiveau6Pharma=findViewById(R.id.tvNiveau6);
-        tvNiveau7Pharma=findViewById(R.id.tvNiveau7);
-        tvNiveau8Pharma=findViewById(R.id.tvNiveau8);
-        tvScoreP = findViewById(R.id.tvScoreP);
+        tvNiveau1=findViewById(R.id.tvNiveau1);
+        tvNiveau2=findViewById(R.id.tvNiveau2);
+        tvNiveau3=findViewById(R.id.tvNiveau3);
+        tvNiveau4=findViewById(R.id.tvNiveau4);
+        tvNiveau5=findViewById(R.id.tvNiveau5);
+        tvNiveau6=findViewById(R.id.tvNiveau6);
+        tvNiveau7=findViewById(R.id.tvNiveau7);
+        tvNiveau8=findViewById(R.id.tvNiveau8);
+        tvScore = findViewById(R.id.tvScore);
 
-
-
-
-        tvNiveau1Pharma.setOnClickListener(new View.OnClickListener() {
+        tvNiveau1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 1);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
+
+
             }
         });
 
-        tvNiveau2Pharma.setOnClickListener(new View.OnClickListener() {
+        tvNiveau2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 2);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvNiveau3Pharma.setOnClickListener(new View.OnClickListener() {
+        tvNiveau3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 3);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvNiveau4Pharma.setOnClickListener(new View.OnClickListener() {
+        tvNiveau4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 4);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvNiveau5Pharma.setOnClickListener(new View.OnClickListener() {
+
+        tvNiveau5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 5);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvNiveau6Pharma.setOnClickListener(new View.OnClickListener() {
+
+        tvNiveau6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
-                tvNiveau1ActivityIntent.putExtra("NIVEAU", 6);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
+                tvNiveau1ActivityIntent.putExtra("NIVEAU", 5);
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvNiveau7Pharma.setOnClickListener(new View.OnClickListener() {
+        tvNiveau7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 7);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvNiveau8Pharma.setOnClickListener(new View.OnClickListener() {
+        tvNiveau8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tvNiveau1ActivityIntent = new Intent(PharmacologyActivity.this, TvNiveau1Activity.class);
+                Intent tvNiveau1ActivityIntent = new Intent(AnatomyActivity.this, QuizActivity.class);
                 tvNiveau1ActivityIntent.putExtra("NIVEAU", 8);
-                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.PHARMACOLOGY.toString());
+                tvNiveau1ActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
                 startActivity(tvNiveau1ActivityIntent);
             }
         });
 
-        tvScoreP.setOnClickListener(new View.OnClickListener() {
+        tvScore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  tvScorePActivityIntent = new Intent(PharmacologyActivity.this, ScorePhaActivity.class);
-                startActivity( tvScorePActivityIntent);
+                Intent tvScoreActivityIntent = new Intent(AnatomyActivity.this, ScoreActivity.class);
+                tvScoreActivityIntent.putExtra("TYPE_QUESTION", TypeQuestion.ANATOMY.toString());
+                startActivity(tvScoreActivityIntent);
 
                 if (mInterstitialAd != null) {
-                    mInterstitialAd.show(PharmacologyActivity.this);
+                    mInterstitialAd.show(AnatomyActivity.this);
                 } else {
                     Log.d("TAG", "The interstitial ad wasn't ready yet.");
                 }
@@ -152,6 +154,7 @@ public class PharmacologyActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
     }
+
     void LoadInterstitial() {
         AdRequest adRequest = new AdRequest.Builder().build();
 
